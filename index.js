@@ -11,11 +11,11 @@ function increaseRankBy(n) {
     }
 }
 function deepestChild() {
-  var element = document.getElementById('grand-node')
-  var child = element.children[0];
-  while (child) {
-    element = child 
-    child = element.children[0]
+  var inception = document.getElementById('grand-node');
+  var nolan = inception.children[0];
+  while (nolan) {
+    inception = nolan;
+    nolan = inception.children[0];
   }
-  return element
+  return inception;
 } 

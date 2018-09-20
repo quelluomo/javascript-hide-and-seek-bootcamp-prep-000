@@ -10,14 +10,6 @@ function increaseRankBy(n) {
       rank[i].innerHTML = parseInt(rank[i].innerHTML)+n;
     }
 }
-function deepestChild(){
-  var rank = document.getElementById('grand-node').querySelectorAll('div');
-    var inception;
-    for (let i = 0; i < rank.length; i++) {
-      inception = rank[i].querySelector('div');
-    }
-    return rank;
-}
 function deepestChild() {
   let parent = document.querySelector('div#grand-node');
   let child = parent.querySelectorAll('div')[3];
